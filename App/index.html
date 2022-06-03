@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Terminal</title>
+    <!-- Start Font Awesome -->
+    <link rel="stylesheet" href="./Assets/FontAwesome/css/all.min.css" />
+    <!-- End Font Awesome -->
+    <!-- Start Custom Css -->
+    <link rel="stylesheet" href="./Assets/CustomCssJs/App.css" />
+    <!-- End Custom Css -->
+  </head>
+
+  <body>
+    <section class="app">
+      <textarea class="section_terminal"></textarea>
+      <section class="status_bar_terminal" draggable="true">
+        <p>Terminal :</p>
+        <div>
+          <select class="sect_select_command" title="Important commands">
+            <optgroup
+              class="commands_package_json"
+              label="Commands In File Package.json You"
+            ></optgroup>
+            <optgroup label="Commands npm">
+              <option value="npm start">npm start</option>
+              <option value="npm -v">npm -v</option>
+              <option value="npm list">npm list</option>
+              <option value="npm link">npm link</option>
+            </optgroup>
+            <optgroup label="Commands Electron">
+              <option value="electron .">electron .</option>
+              <option
+                value="electron-packager ./ Editor --platform=win32 --asar"
+              >
+                electron-packager ./ Editor --platform=win32 --asar
+              </option>
+              <option
+                value="electron-packager ./ Editor --platform=darwin --asar"
+              >
+                electron-packager ./ Editor --platform=darwin --asar
+              </option>
+              <option
+                value="electron-packager ./ Editor --platform=linux --asar"
+              >
+                electron-packager ./ Editor --platform=linux --asar
+              </option>
+              <option value="electron-packager ./ Editor --platform=all --asar">
+                electron-packager ./ Editor --platform=all --asar
+              </option>
+            </optgroup>
+            <optgroup label="Commands Laravel">
+              <option value="npm run development">npm run development</option>
+              <option value="mix">mix</option>
+              <option value="mix watch">mix watch</option>
+              <option value="mix watch --hot">mix watch --hot</option>
+              <option value="npm run production">npm run production</option>
+              <option value="mix --production">mix --production</option>
+            </optgroup>
+            <optgroup label="Commands React">
+              <option value="react-scripts start">react-scripts start</option>
+              <option value="react-scripts test">react-scripts test</option>
+              <option value="react-scripts build">react-scripts build</option>
+              <option value="react-scripts eject">react-scripts eject</option>
+            </optgroup>
+            <optgroup label="Commands ReactNative">
+              <option value="react-native run-android">
+                react-native run-android
+              </option>
+              <option value="react-native run-ios">react-native run-ios</option>
+              <option value="expo start --web">expo start --web</option>
+              <option value="react-native start">react-native start</option>
+              <option value="react-native link">react-native link</option>
+            </optgroup>
+            <optgroup label="Commands Subsidiary">
+              <option value="node -v">node -v</option>
+              <option value="laravel">laravel</option>
+              <option value="laravel -V">laravel -V</option>
+              <option value="laravel -h">laravel -h</option>
+              <option value="ls">ls</option>
+              <option value="help">help</option>
+            </optgroup>
+          </select>
+          <i class="run_code_selected fas fa-play" title="Run Code"></i>
+          <i
+            class="click_close fas fa-window-close"
+            title="Rebuild Terminal"
+          ></i>
+        </div>
+      </section>
+    </section>
+  </body>
+
+  <section>
+    <!-- Start Custom Js -->
+    <script src="./Assets/CustomCssJs/App.js"></script>
+    <!-- End Custom Js -->
+  </section>
+</html>
